@@ -331,6 +331,7 @@ nav .fas{
     }
     logo{
     width: 40px;
+        display: none;
 }
     .header-text{
         margin-top: 100%;
