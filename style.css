@@ -30,7 +30,7 @@ nav{
     align-items: center;
 
 }
-logo{
+.logo{
     width: 140px;
 }
 nav ul li{
@@ -329,9 +329,9 @@ nav .fas{
     #header{
         background-image: url(images/mobile.png);
     }
-    logo{
+    .logo{
     width: 40px;
-        display: none;
+       
 }
     .header-text{
         margin-top: 100%;
