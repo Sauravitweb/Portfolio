@@ -329,6 +329,9 @@ nav .fas{
     #header{
         background-image: url(images/mobile.png);
     }
+    logo{
+    width: 80px;
+}
     .header-text{
         margin-top: 100%;
         font-size: 16px;
@@ -339,7 +342,7 @@ nav .fas{
     }
     nav .fas{
         display: block;
-        font-size: 2px;
+        font-size: 20px;
     }
     nav ul{
         background: #ff004f;
