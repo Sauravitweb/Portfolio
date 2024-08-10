@@ -7,14 +7,50 @@
 html{
     scroll-behavior: smooth;
 }
-
 /* Default Dark Mode Styles */
 body {
+    background-color: #121212;
+    color: #e0e0e0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header h1 {
+    color: #ffffff;
+}
+
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Button Styling */
+#modeToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Button Styling for Light Mode */
+body.light-mode #modeToggle {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Default Dark Mode Styles */
+/* body {
     background-color: #080808;
     color: #fff;
     transition: background-color 0.3s, color 0.3s;
 }
-
+ */
 #header {
     width: 100%;
     height: 100vh;
@@ -80,10 +116,10 @@ nav ul li a:hover::after {
 }
 
 /* Light Mode Styles */
-body.light-mode {
+/* body.light-mode {
     background-color: #f4f4f4;
     color: #080808;
-}
+} */
 
 body.light-mode nav ul li a {
     color: #080808;
