@@ -11,8 +11,8 @@ html{
 
         /* Dark mode styles */
         body.dark-mode {
-            background-color: #121212;
-            color: white;
+            background-color: #fff;
+            color: black;
         }
 
             /* Moon icon styles */
