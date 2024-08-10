@@ -7,9 +7,24 @@
 html{
     scroll-behavior: smooth;
 }
+
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+
+            /* Moon icon styles */
+        .fa-moon-o {
+            cursor: pointer;
+            font-size: 20px;
+        }
+
 body{
     background-color: #080808;
     color: #fff;
+    transition: background-color 0.3s, color 0.3s;
 }
 #header
 {
