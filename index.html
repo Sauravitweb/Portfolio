@@ -18,7 +18,7 @@
                     <li><a href="#services">Service</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                  <li><a><i class="fa fa-moon-o" area-hidden="true" onclick="darkmode()"></i</a></li>
+                  <i class="fa fa-moon-o" area-hidden="true" onclick="darkmode()">
 
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
@@ -204,14 +204,15 @@
     {
         sidemenu.style.right = "-200px";
     }
-   
-    function darkmode()
+       function darkmode()
     {
-    sidemenu.body.background-color: #fff;
-    sidemenu.body.color: #000000;
+    sidemenu.style.body.background-color: #fff;
+    sidemenu.style.body.color: #000000;
     }
+    
 
 </script>
+    
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzP0FXe9TqK5VOR86Weic_FZTYcdheb-i3WSKNuCpmmfBbBAZ298z5FqmQ4E66XHCa9wQ/exec'
     const form = document.forms['submit-to-google-sheet']
