@@ -10,7 +10,11 @@
 <body>
     <div id="header">
         <div class="container">
+          
             <nav>
+                  <!-- Dark Mode Toggle Button -->
+    <button id="modeToggle" onclick="toggleMode()">Switch to Light Mode</button>
+<i class="fa fa-moon-o" aria-hidden="true" onclick="toggleDarkMode()"></i>
                 <img src="images/logo.png"class="logo">
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
@@ -18,7 +22,8 @@
                     <li><a href="#services">Service</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                  <i class="fa fa-moon-o" aria-hidden="true" onclick="toggleDarkMode()"></i>
+                  
+                
 
 
                     <i class="fas fa-times" onclick="closemenu()"></i>
@@ -213,6 +218,21 @@
     function toggleDarkMode() {
         document.body.classList.toggle('light-mode');
     }
+      function toggleMode() {
+    const body = document.body;
+    const toggleButton = document.getElementById('modeToggle');
+
+    // Toggle the light-mode class on the body
+    body.classList.toggle('light-mode');
+
+    // Update the button text based on the current mode
+    if (body.classList.contains('light-mode')) {
+        toggleButton.textContent = 'Switch to Dark Mode';
+    } else {
+        toggleButton.textContent = 'Switch to Light Mode';
+    }
+}
+
 </script>
 
 <script>
